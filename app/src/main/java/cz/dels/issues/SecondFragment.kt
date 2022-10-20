@@ -33,7 +33,10 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecond.setOnClickListener {
+            // So if you navigate here using Safe args then it crashes.
+            // But if you do not use it then it does not crash.
             findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToThirdFragment())
+//            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
         }
     }
 

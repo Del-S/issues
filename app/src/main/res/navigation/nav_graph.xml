@@ -46,7 +46,7 @@
             <action
                 android:id="@+id/action_SecondFragment_to_ThirdFragment"
                 app:destination="@id/ThirdFragment"
-                app:popUpTo="@id/FirstFragment"
+                app:popUpTo="@id/nav_graph_child"
                 app:popUpToInclusive="true"/>
 
         </fragment>
