@@ -7,8 +7,8 @@ At the moment it showcases [issue with popping child nav graph](https://issuetra
 #### Issue 249988437
 
 Steps: 
-1) Navigate from Second Fragment to Child nav graph (with non-nullable parameters).
-2) Navigate to Third fragment using SafeArgs and the app crashes.
+1) Navigate from FirstFragment to Child nav graph (with non-nullable parameters).
+2) Navigate to ThirdFragment using SafeArgs and the app crashes.
 
 Crash log:
 
