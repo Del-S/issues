@@ -19,8 +19,8 @@
     <navigation android:id="@+id/nav_graph_child"
         app:startDestination="@id/SecondFragment">
 
-        <!-- If NavArgs is used this needs to be here to allow passing params into SecondFragment
-             which is a default destination of child nav graph -->
+        <!-- This needs to be here to navigate to Child nav graph using SafeArgs. -->
+        <!-- It is because SafeArgs does not take startDestination args into an account. -->
         <argument
             android:name="title"
             app:argType="string"/>
@@ -35,6 +35,7 @@
             android:label="@string/second_fragment_label"
             tools:layout="@layout/fragment_second">
 
+            <!-- This needs to be here so we can load arguments by NavArgs(). -->
             <argument
                 android:name="title"
                 app:argType="string"/>
